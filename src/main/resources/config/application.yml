@@ -1,0 +1,18 @@
+spring:
+#  debug: false
+  batch:
+    job:
+      enabled: true
+    initialize-schema: always
+         
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: admin
+    
+    
+    
+#   flyway:
+#     locations: db/migration/postgresql
+#     baseline-on-migrate: true
